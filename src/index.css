@@ -1,0 +1,124 @@
+/* ── Google Fonts (loaded in public/index.html) ─────────────────────────── */
+
+/* ── CSS Variables ──────────────────────────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg:     #0b0d11;
+  --bg2:    #12151c;
+  --bg3:    #1a1e28;
+  --bg4:    #222840;
+
+  /* Borders */
+  --border:  #2a3050;
+  --border2: #3a4570;
+
+  /* Text */
+  --text:  #e8ecf8;
+  --text2: #8b97c4;
+  --text3: #4e5a80;
+
+  /* Brand */
+  --accent:  #6366f1;
+  --accent2: #818cf8;
+
+  /* Semantic */
+  --green:  #22d3a0;
+  --yellow: #fbbf24;
+  --red:    #f43f5e;
+  --orange: #fb923c;
+  --blue:   #38bdf8;
+
+  /* Priority */
+  --prio-critical: #f43f5e;
+  --prio-high:     #fb923c;
+  --prio-medium:   #fbbf24;
+  --prio-low:      #22d3a0;
+
+  /* Shared tokens */
+  --radius:    8px;
+  --radius-lg: 12px;
+  --font:      'Outfit', sans-serif;
+  --mono:      'DM Mono', monospace;
+}
+
+/* ── Reset ──────────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font);
+  border: none;
+  background: none;
+}
+
+input,
+select,
+option {
+  font-family: var(--font);
+}
+
+/* ── Scrollbars ─────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg2);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* ── Presence pulse animation ───────────────────────────────────────────── */
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(34, 211, 160, 0.5); }
+  70%  { box-shadow: 0 0 0 7px rgba(34, 211, 160, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 211, 160, 0); }
+}
+
+/* ── Card hover lift ────────────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Drag ghost rotate ──────────────────────────────────────────────────── */
+@keyframes ghostIn {
+  from { opacity: 0; transform: scale(0.96) rotate(0deg); }
+  to   { opacity: 0.88; transform: scale(1.03) rotate(1.2deg); }
+}
+
+/* ── Responsive (tablet 768px) ──────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .kanban-board {
+    gap: 10px;
+    padding: 12px;
+  }
+}
