@@ -3,6 +3,23 @@
 A fully-featured project management UI built with **React 18 + TypeScript**, featuring a custom drag-and-drop system, virtual scrolling, live collaboration indicators, and full URL-state filter persistence.
 
 ---
+## 🖼 UI Preview
+
+> 📌 Add your screenshots inside an `/assets` folder
+
+### 🧩 Kanban View
+<img src="<img width="1600" height="759" alt="image" src="https://github.com/user-attachments/assets/304788dc-876f-4a2d-9e14-eeab9c4e9835" />
+" width="800"/>
+
+### 📋 List View
+<img src="<img width="1600" height="758" alt="image" src="https://github.com/user-attachments/assets/94efed30-c90f-4330-8409-764108351f67" />
+" width="800"/>
+
+### 📊 Timeline View
+<img src="<img width="1600" height="757" alt="image" src="https://github.com/user-attachments/assets/df52c702-1d85-4d0f-a940-9b9559668f92" />
+" width="800"/>
+
+---
 
 ## 🚀 Quick Start
 
